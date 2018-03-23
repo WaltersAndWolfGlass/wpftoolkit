@@ -1026,7 +1026,7 @@ namespace Xceed.Wpf.DataGrid
 
       var dataItem = rawItem.DataItem;
 
-      if( globalSortedIndex != -1 )
+      if( globalSortedIndex == -1 )
       {
         this.RemoveRawItemInFilteredList( rawItem );
         this.RemoveRawItemInGroup( rawItem );
