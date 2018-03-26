@@ -4,7 +4,7 @@
   <description asmv2:iconFile="App.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Xceed.Wpf.Toolkit.LiveExplorer" version="3.3.6626.16958" publicKeyToken="3E4669D2F30244F4" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="Xceed.Wpf.Toolkit.LiveExplorer" version="3.3.6656.23089" publicKeyToken="3E4669D2F30244F4" language="neutral" processorArchitecture="x86" />
     <commandLine file="Xceed.Wpf.Toolkit.LiveExplorer.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.AvalonDock.dll" size="423936">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.AvalonDock.dll" size="424448">
       <assemblyIdentity name="Xceed.Wpf.AvalonDock" version="3.3.0.0" publicKeyToken="3E4669D2F30244F4" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>yh8J7Gpu+862mxX4JsV9yVLZog8=</dsig:DigestValue>
+        <dsig:DigestValue>Ie8COZjXyZwu78mBhx4gArW9pwA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>QQb6ljnnDKdHSin2C6nEL+pbtKQ=</dsig:DigestValue>
+        <dsig:DigestValue>gPsKfFMzo6sG1yQuJ5NMAToGwlY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>b1qPOSPea4dj9i2vTmtnngHNhRI=</dsig:DigestValue>
+        <dsig:DigestValue>TIhc+6aiAyG1c5X102gcl8GmLLA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>EgsWiOSGNstpQlkXTsUWqok9Qfc=</dsig:DigestValue>
+        <dsig:DigestValue>3VVIC3aA0Cu5h6d3wegdL0J/t/Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,7 +98,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>F+LofA8yW8kijhZPwtIdVVwQIRM=</dsig:DigestValue>
+        <dsig:DigestValue>O45I98JWJbKfFSy7qPkXOKOep8A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>PD3Ys6aK1e/ARCseDV093uUNLEA=</dsig:DigestValue>
+        <dsig:DigestValue>csDW4tg/SB778IdyZpgYQCCCKGE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -122,7 +122,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ONA9jHNXHD8Gl2TgeFqbJhamU+Q=</dsig:DigestValue>
+        <dsig:DigestValue>NmQMI4GbAMV8w4E9JUAJDsLUxM0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -134,7 +134,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>2+iwtdlc3AmPIjnmdrT87su78JM=</dsig:DigestValue>
+        <dsig:DigestValue>NqEEaZCfyMP+8xEAX731nT0tHg8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -146,7 +146,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>QeUrdtEGjfmP1wBnjlfOdanI0Fc=</dsig:DigestValue>
+        <dsig:DigestValue>1nAcBbbZivhA9VQXCVuzLZTTsYk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -158,7 +158,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>o8WLfLrbBvaRwDWw9Q14MyKjntk=</dsig:DigestValue>
+        <dsig:DigestValue>m/VYOs9GGBGXG4U9YOZFX81G0uQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -170,7 +170,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>BIjiyx+cAGwElzPCgqmU38zqrv4=</dsig:DigestValue>
+        <dsig:DigestValue>pXDps/Wqi56mINEANMqQNkZL6Vc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -182,7 +182,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>QCTgml0eJRfPyeH59qjQ4rkOs6Q=</dsig:DigestValue>
+        <dsig:DigestValue>oOpD9ZPNd+YUiB6YnI/h3m/Xla8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -194,7 +194,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>XkHNCFh7LOdp0Gq08js4E0gonhk=</dsig:DigestValue>
+        <dsig:DigestValue>e3rTrdrhgGcEFvl+q8xksuz0IOA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -206,19 +206,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>TQmPfpvJzFXO94Zwto7jTk4M1ms=</dsig:DigestValue>
+        <dsig:DigestValue>Yd7ENYKzg5q8S9tnECnhq8xpRaE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.DataGrid.dll" size="2435072">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.DataGrid.dll" size="2436096">
       <assemblyIdentity name="Xceed.Wpf.DataGrid" version="3.3.0.0" publicKeyToken="3E4669D2F30244F4" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>JWfLX/HG2uVaNuZadAr9Q7VvylM=</dsig:DigestValue>
+        <dsig:DigestValue>PBcYjNjfNyooZKZf5RgDET3Y/R4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -242,31 +242,31 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>nHZSxXLH96hfpnAmriFf1lvgluM=</dsig:DigestValue>
+        <dsig:DigestValue>7lWdoeq7VHSe6TngfWWU98r0iR8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Xceed.Wpf.Toolkit.LiveExplorer.exe" size="16274944">
-      <assemblyIdentity name="Xceed.Wpf.Toolkit.LiveExplorer" version="3.3.6626.16958" publicKeyToken="3E4669D2F30244F4" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="Xceed.Wpf.Toolkit.LiveExplorer" version="3.3.6656.23089" publicKeyToken="3E4669D2F30244F4" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>LH16Q6rYGQdOcA6D+fZjb13Wj5g=</dsig:DigestValue>
+        <dsig:DigestValue>pOV0cwQ8gUBag38xaF12CVt6KZ4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\Xceed.Wpf.Toolkit.LiveExplorer.resources.dll" size="5632">
-      <assemblyIdentity name="Xceed.Wpf.Toolkit.LiveExplorer.resources" version="3.3.6626.16958" publicKeyToken="3E4669D2F30244F4" language="fr" processorArchitecture="x86" />
+      <assemblyIdentity name="Xceed.Wpf.Toolkit.LiveExplorer.resources" version="3.3.6656.23089" publicKeyToken="3E4669D2F30244F4" language="fr" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>0rRo3xJEs6RebQPhU/JDTZZEmKY=</dsig:DigestValue>
+        <dsig:DigestValue>aBzk/PfvzqMY23ChKjySDRZqxUo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
