@@ -1,14 +1,14 @@
 ﻿/*************************************************************************************
+   
+   Toolkit for WPF
 
-   Extended WPF Toolkit
-
-   Copyright (C) 2007-2013 Xceed Software Inc.
+   Copyright (C) 2007-2018 Xceed Software Inc.
 
    This program is provided to you under the terms of the Microsoft Public
    License (Ms-PL) as published at http://wpftoolkit.codeplex.com/license 
 
    For more features, controls, and fast professional support,
-   pick up the Plus Edition at http://xceed.com/wpf_toolkit
+   pick up the Plus Edition at https://xceed.com/xceed-toolkit-plus-for-wpf/
 
    Stay informed: follow @datagrid on Twitter or Like http://facebook.com/datagrids
 
@@ -612,7 +612,11 @@ namespace Xceed.Wpf.DataGrid
 
                     m_sourceItemList.Add( rawItem );
                     this.AddRawItemDataItemMapping( rawItem );
-                    m_filteredItemList.Add( rawItem );
+
+                    if( this.PassesFilter( item ) )
+                    {
+                      m_filteredItemList.Add( rawItem );
+                    }
                   }
 
                   bLoaded = true;
@@ -654,7 +658,11 @@ namespace Xceed.Wpf.DataGrid
                     m_sourceItemList.Add( rawItem );
 
                     this.AddRawItemDataItemMapping( rawItem );
-                    m_filteredItemList.Add( rawItem );
+
+                    if( this.PassesFilter( item ))
+                    {
+                      m_filteredItemList.Add( rawItem );
+                    }
                   }
                 }
               }
@@ -754,9 +762,16 @@ namespace Xceed.Wpf.DataGrid
         var item = items[ i ];
         var rawItem = new RawItem( index, item );
 
-        this.AddRawItemInSourceList( index, rawItem );
-        this.AddRawItemInFilteredList( rawItem );
-        this.AddRawItemInGroup( rawItem );
+        if( this.PassesFilter( item ) )
+        {
+          this.AddRawItemInSourceList( index, rawItem );
+          this.AddRawItemInFilteredList( rawItem );
+          this.AddRawItemInGroup( rawItem );
+        }
+        else
+        {
+          this.AddRawItemInSourceList( index, rawItem );
+        }
       }
 
       return true;
@@ -1026,10 +1041,77 @@ namespace Xceed.Wpf.DataGrid
 
       var dataItem = rawItem.DataItem;
 
-      if( globalSortedIndex == -1 )
+      if( this.PassesFilter( dataItem ) )
       {
-        this.RemoveRawItemInFilteredList( rawItem );
-        this.RemoveRawItemInGroup( rawItem );
+        if( globalSortedIndex == -1 )
+        {
+          this.AddRawItemInFilteredList( rawItem );
+          this.AddRawItemInGroup( rawItem );
+          return;
+        }
+      }
+      else
+      {
+        if( globalSortedIndex != -1 )
+        {
+          this.RemoveRawItemInFilteredList( rawItem );
+          this.RemoveRawItemInGroup( rawItem );
+        }
+
+        return;
+      }
+
+      // Verify the row is in the correct group.
+      var newGroup = this.GetRawItemNewGroup( rawItem );
+      var currentGroup = rawItem.ParentGroup;
+
+      if( currentGroup != newGroup )
+      {
+        using( this.DeferCurrencyEvent() )
+        {         
+          var newSortIndex = newGroup.BinarySearchRawItem( rawItem, this.RawItemSortComparer );
+          if( newSortIndex < 0 )
+          {
+            newSortIndex = ~newSortIndex;
+          }
+
+          currentGroup.RemoveRawItemAt( rawItem.SortedIndex );
+          newGroup.InsertRawItem( newSortIndex, rawItem );
+
+          var newGlobalSortedIndex = rawItem.GetGlobalSortedIndex();
+          this.AdjustCurrencyAfterMove( globalSortedIndex, newGlobalSortedIndex, 1 );
+
+          this.OnCollectionChanged( new NotifyCollectionChangedEventArgs( NotifyCollectionChangedAction.Move, rawItem.DataItem, newGlobalSortedIndex, globalSortedIndex ) );
+        }
+      }
+      else
+      {
+        // Verify sorting only if we have not changed group, since adding an item in a group will automatically sort it.
+        // Even if we are not sorted, we must ensure the order matches the natural order of the source.
+        int newSortIndex = newGroup.BinarySearchRawItem( rawItem, this.RawItemSortComparer );
+
+        if( newSortIndex < 0 )
+        {
+          newSortIndex = ~newSortIndex;
+        }
+
+        if( newSortIndex > rawItem.SortedIndex )
+        {
+          newSortIndex--;
+        }
+
+        if( rawItem.SortedIndex != newSortIndex )
+        {
+          using( this.DeferCurrencyEvent() )
+          {
+            newGroup.MoveRawItem( rawItem.SortedIndex, newSortIndex );
+
+            var newGlobalSortedIndex = rawItem.GetGlobalSortedIndex();
+            this.AdjustCurrencyAfterMove( globalSortedIndex, newGlobalSortedIndex, 1 );
+
+            this.OnCollectionChanged( new NotifyCollectionChangedEventArgs( NotifyCollectionChangedAction.Move, rawItem.DataItem, newGlobalSortedIndex, globalSortedIndex ) );
+          }
+        }
       }
     }
 
